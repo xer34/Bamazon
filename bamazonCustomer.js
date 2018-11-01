@@ -55,11 +55,11 @@ function afterConnection() {
         connection.query("SELECT * FROM products", function(err, data) {
           if (err) throw err;
 
-          var amountInStock = data[inquirerResponse.productID].stock_quantity;
+          var amountInStock = data[(inquirerResponse.productID) - 1].stock_quantity;
 
           var amountToSell = inquirerResponse.productAmount;
 
-          var price = data[inquirerResponse.productID].price; 
+          var price = data[(inquirerResponse.productID) - 1].price; 
           
           if (amountInStock > inquirerResponse.productAmount) {
 

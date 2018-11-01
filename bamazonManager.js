@@ -70,8 +70,7 @@ function viewProduct() {
       }
       console.log(table.toString());
       connection.end();
-      operation();
-      
+     
     });
   });
 }
@@ -105,7 +104,7 @@ function viewInventory() {
 
       console.log(table.toString());
       connection.end();
-      operation();
+
     });
   });
 }
@@ -132,13 +131,13 @@ function addInventory() {
         connection.query("SELECT * FROM products", function(err, data) {
             if (err) throw err;
 
-        var productID = data[inquirerResponse.productID].id;
+        var productID = data[(inquirerResponse.productID) - 1].id;
       console.log(productID)
 
       var restockAmount = inquirerResponse.amountToReplenish;
       console.log(restockAmount)
 
-      var amountInStock = data[inquirerResponse.productID].stock_quantity;
+      var amountInStock = data[(inquirerResponse.productID) - 1].stock_quantity;
 
       var sql =
         "UPDATE products SET stock_quantity = " +
@@ -158,16 +157,16 @@ function addInventory() {
            
               
                 table.push([
-                  data[inquirerResponse.productID].id,
-                  data[inquirerResponse.productID].product_name,
-                  data[inquirerResponse.productID].department_name,                  data[inquirerResponse.productID].price,
-                  data[inquirerResponse.productID].stock_quantity
+                  data[(inquirerResponse.productID) - 1].id,
+                  data[(inquirerResponse.productID) - 1].product_name,
+                  data[(inquirerResponse.productID) - 1].department_name,                  data[inquirerResponse.productID].price,
+                  data[(inquirerResponse.productID) - 1].stock_quantity
                 ]);
               
 
                 console.log(table.toString());
                 connection.end();
-                operation();
+
         })
     });
 
