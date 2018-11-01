@@ -39,6 +39,7 @@ Here you can add a new product if you so desire!
 
 ![alt text](managerproduct1.png)
 ![alt text](managerproduct2.png)
+
 #Supervisor View
 
 1. Create a new MySQL table called `departments`. Your table should include the following columns:
