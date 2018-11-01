@@ -4,7 +4,7 @@ Hello, and welcome to Bad Amazon, or Bamazon for short
 
 # Customer View
 
-Wanna buy some stuff? Bamazon makes it easy. Just select the item from the list of junk you want and it'll automatically dedecut legal Austrailian currency from your Bamazon account.
+Wanna buy some stuff? Bamazon makes it easy. Just select the item from the list of junk you want and it'll automatically deducut legal Austrailian currency from your Bamazon account.
 
 First, it will ask you what you want to buy, then, how many. Our quantaties are updated on the fly! Your business is important to us!
 
@@ -37,6 +37,8 @@ Here you can add a new product if you so desire!
 
   * Add New Product
 
+![alt text](managerproduct1.png)
+![alt text](managerproduct2.png)
 #Supervisor View
 
 1. Create a new MySQL table called `departments`. Your table should include the following columns:
