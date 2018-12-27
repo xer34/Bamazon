@@ -40,6 +40,7 @@ Here you can add a new product if you so desire!
 ![alt text](managerproduct1.png)
 ![alt text](managerproduct2.png)
 
+<<<<<<< HEAD
 #Supervisor View
 
 1. Create a new MySQL table called `departments`. Your table should include the following columns:
@@ -76,3 +77,5 @@ Here you can add a new product if you so desire!
    - Hint: You may need to look into GROUP BYs.
 
    - Hint: You may need to look into JOINS.
+=======
+>>>>>>> e2629923d4de304ecfc4109adef2c94220f07072
